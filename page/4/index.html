@@ -30,13 +30,13 @@
 
 
 
-  <title>
-  instagram // Yuanjie's NoteBook
-</title>
+  <title> Yuanjie's NoteBook </title>
 </head>
 
 <body>
-  <div class="container one-column ">
+  <div class="container one-column 
+   page-home 
+">
     <div class="headband"></div>
 
     <div id="header" class="header">
@@ -98,22 +98,83 @@
             
           
 
-          <div id="posts" class="posts-collapse">
+          <div id="posts" class="posts-expand">
             
+  
+    
+
+  <div class="post post-type-normal ">
+    <div class="post-header">
+
+      
+      
+        <h1 class="post-title">
+          
+          
+            
+              <a class="post-title-link" href="/2015/02/06/hello-world/">
+                Hello World
+              </a>
+            
+          
+        </h1>
+      
+
+      <div class="post-meta">
+          <span class="post-time">
+            
+              Posted on 2015-02-05
+            
+          </span>
+        
+          
+        
+      </div>
+    </div>
+
+    
+      <div class="post-body">
+
+        
+        
+
+        
+          
+            <!-- more -->
+<p>Welcome to <a href="http://hexo.io/" target="_blank" rel="external">Hexo</a>! This is your very first post. Check <a href="http://hexo.io/docs/" target="_blank" rel="external">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="http://hexo.io/docs/troubleshooting.html" target="_blank" rel="external">trobuleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="external">GitHub</a>.<br>
+            <div class="post-more-link text-center">
+              <a class="btn" href="/2015/02/06/hello-world/#more">
+                Read more &raquo;
+              </a>
+            </div>
+          
+        
+      </div>
+    
+
+    
+      <div class="post-footer">
+        
+
+        
+
+        
+        
+          <div class="post-eof"></div>
+        
+      </div>
+    
+  </div>
+
 
   
-  
-    <p>layout: post<br>slug: “instagram”<br>title: “相册”</p>
-<h2 id="noDate:_“true”">noDate: “true”</h2>
-<p><div class="instagram" data-client-id="956dd096b6e5496aba6662165b9b8443" data-user-id="438522285"><br>    <a href="http://instagram.com/litten225" target="_blank" class="open-ins">图片来自instagram，正在加载中…</a><br></div></p>
-<script src="/js/jquery.lazyload.js"></script>
-<script src="/js/instagram.js"></script>
-
-  
-
 
           </div>
 
+          
+            <div class="pagination">
+              <a class="extend prev" rel="prev" href="/page/3/">&laquo;</a><a class="page-number" href="/">1</a><a class="page-number" href="/page/2/">2</a><a class="page-number" href="/page/3/">3</a><span class="page-number current">4</span>
+            </div>
           
         </div>
 
@@ -264,6 +325,17 @@
   <script type="text/javascript" src="/vendors/velocity/velocity.ui.min.js"></script>
 
   
+  <script type="text/javascript" id="motion.page.home">
+    $(document).ready(function () {
+      $.Velocity.RunSequence([
+        { e: $('.brand'), p: { opacity: 1 }, o: { duration: 100 } },
+        { e: $('.logo'), p: { opacity: 1, top: 0 }, o: { duration: 50} },
+        { e: $('.site-title'), p: { opacity: 1, top: 0 }, o: { duration: 200, sequenceQueue: false } }
+      ]);
+      $('.menu-item').velocity('transition.slideDownIn', {display: null});
+    });
+  </script>
+
 
   <script type="text/javascript" id="motion.global">
   $(document).ready(function () {
